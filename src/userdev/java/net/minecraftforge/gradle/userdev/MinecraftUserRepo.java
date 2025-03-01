@@ -341,8 +341,8 @@ public class MinecraftUserRepo extends BaseRepo {
             String classifier = "userdev";
             if ("net.minecraftforge".equals(GROUP) && "forge".equals(NAME)) {
                 MinecraftVersion mcver = MinecraftVersion.from(VERSION.split("-")[0]);
-                if (mcver.compareTo(v1_13) < 0)
-                    classifier = "userdev3";
+                // if (mcver.compareTo(v1_13) < 0)
+                //     classifier = "userdev3";
             }
 
             String artifact = isPatcher ? (GROUP + ":" + NAME +":" + VERSION + ':' + classifier) :
